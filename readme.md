@@ -1,4 +1,4 @@
-![https://nodei.co/npm/goocli.png](npm install -g goocli)
+![npm install -g goocli](https://nodei.co/npm/goocli.png)
 
 ### goocli
 
