@@ -1,6 +1,6 @@
 {
   "name": "goocli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "search with google via a cli",
   "main": "index.js",
   "bin": {

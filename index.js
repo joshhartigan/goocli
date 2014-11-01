@@ -4,12 +4,6 @@ var cheerio = require('cheerio');
 var req = require('request');
 var open_ = require('open');
 
-var titleString = [
-'  _____              ___',
-' / ___/__  ___  ____/ (_)',
-'/ (_ / _ \\/ _ \\/ __/ / /',
-'\\___/\\___/\\___/\\__/_/_/'].join('\n');
-
 var query = process.argv[2];
 var linkChoice = process.argv[3];
 
@@ -39,8 +33,6 @@ function searchFor(query) {
       $ = cheerio.load(data);
 
       if ( !linkChoice) {
-        console.log(titleString);
-
         $('h3.r').each( function(i, elem) {
           process.stdout.write( '[' + i + '] ' );
           console.log( $(this).text() );
@@ -52,7 +44,6 @@ function searchFor(query) {
           HRef.indexOf('&')
         ));
       }
-
     }
 
   });
