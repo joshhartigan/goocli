@@ -3,6 +3,7 @@
 var cheerio = require('cheerio')
 var req = require('request')
 var open = require('open')
+var spinner = require('char-spinner')
 
 var query = process.argv[2]
 var linkChoice = process.argv[3]
@@ -16,6 +17,8 @@ if (!query) {
 searchFor(query)
 
 function searchFor (query) {
+  spinner()
+
   req('https://google.com/search?q=' + query, function (err, response, data) {
     if (err) {
       console.log(errorEmoji + err)

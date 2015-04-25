@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/joshhartigan/goocli",
   "dependencies": {
+    "char-spinner": "^1.0.1",
     "cheerio": "^0.17.0",
     "open": "0.0.5",
     "request": "^2.47.0"
