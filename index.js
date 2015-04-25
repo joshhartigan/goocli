@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 var cheerio = require('cheerio')
-var req = require('request')
-var open = require('open')
+var req     = require('request')
+var open    = require('open')
 var spinner = require('char-spinner')
 
 var query = process.argv[2]
